@@ -6,7 +6,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MainClassForAnnotationBase {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(Configuration.class);
-        Institute institute = context.getBean("springApp" , Institute.class);
-        institute.department.validateDepartmentName();
+        Institute institute = context.getBean("institute" , Institute.class);
+        institute.getInfo();
+
     }
 }

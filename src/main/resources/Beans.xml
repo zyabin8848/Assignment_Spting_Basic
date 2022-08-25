@@ -5,15 +5,10 @@
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id = "springApp" class="xmlBase.Institute">
-      <property name="department">
+    <bean id="student" class="xmlBase.Student"/>
+    <bean id = "department" class="xmlBase.Department" autowire="byName"/>
 
-          <bean id="department" class = "xmlBase.Department">
-              <property name="student">
-                  <bean id = "student" class = "xmlBase.Student"></bean>
-              </property>
-          </bean>
-      </property>
+    <bean id = "springApp" class="xmlBase.Institute" autowire="byName" >
 
 
 

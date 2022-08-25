@@ -11,6 +11,8 @@ public class MainExecutionClass {
         Institute institute =  context.getBean(Institute.class,"springApp");
         institute.department.validdataDepartmentName();
         institute.department.student.validateStudentName();
+        institute.department.student.getStudentData();
+        institute.department.getDepartmentData();
 
 
     }
